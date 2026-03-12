@@ -2,7 +2,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 //import './Index.css';
-// Import App component
+// Import App componentmit
 import App from "./App";
 
 
