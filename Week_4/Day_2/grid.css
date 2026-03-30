@@ -1,0 +1,65 @@
+/* Reset */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: "Segoe UI", sans-serif;
+}
+
+/* Page Background */
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#667eea,#764ba2);
+}
+
+/* Main Wrapper */
+.wrapper{
+text-align:center;
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 15px 40px rgba(0,0,0,0.2);
+}
+
+/* Title */
+h1{
+margin-bottom:10px;
+color:#333;
+}
+
+.subtitle{
+margin-bottom:30px;
+color:#777;
+}
+
+/* Grid Layout */
+.grid-container{
+display:grid;
+grid-template-columns:repeat(3,120px);
+grid-template-rows:repeat(3,120px);
+gap:20px;
+justify-content:center;
+}
+
+/* Grid Cards */
+.card{
+background:linear-gradient(135deg,#4facfe,#00f2fe);
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:28px;
+font-weight:bold;
+color:white;
+border-radius:10px;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+transition:transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover Effect */
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 30px rgba(0,0,0,0.25);
+}

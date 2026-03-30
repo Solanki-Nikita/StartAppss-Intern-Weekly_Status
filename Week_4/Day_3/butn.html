@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Background Changer</title>
+
+<style>
+body{
+    background:#f4f7fb;
+    font-family:Arial;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    text-align:center;
+    background:white;
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.1);
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    background:#4a90e2;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+<h1>Background Color Changer</h1>
+<button onclick="changeColor()">Change Color</button>
+</div>
+
+<script>
+
+var colors = ["#f4f7fb","#ffe4e1","#e6f7ff","#e8ffe8","#fff4cc"];
+var index = 0;
+
+function changeColor(){
+
+    document.body.style.backgroundColor = colors[index];
+
+    index++;
+
+    if(index == colors.length){
+        index = 0;
+    }
+
+}
+
+</script>
+
+</body>
+</html>

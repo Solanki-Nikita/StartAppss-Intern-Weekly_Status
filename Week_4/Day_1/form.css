@@ -1,0 +1,134 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Page background */
+body{
+    background:#4b5057;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    
+}
+
+/* Form container */
+.container{
+    background:#b0d1e4;
+    padding:35px;
+    width:600px;
+    border-radius:10px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Heading */
+.container h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#222;
+}
+
+/* Paragraph */
+.container p{
+    text-align:center;
+    color:#666;
+    margin-bottom:25px;
+    font-size:14px;
+}
+
+/* Form layout */
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+/* Labels */
+label{
+    font-weight:600;
+    margin-bottom:5px;
+}
+
+/* Inputs */
+input,
+select,
+textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:14px;
+}
+
+/* Focus effect */
+input:focus,
+select:focus,
+textarea:focus{
+    outline:none;
+    border-color:#4a90e2;
+}
+
+/* Checkbox section */
+.checkbox-group{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+/* Button container */
+.button-group{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    margin-top:10px;
+}
+
+/* Checkbox row */
+.checkbox-row{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox-row input{
+    width: auto;
+}
+
+/* Buttons row */
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+
+/* Submit button */
+input[type="submit"]{
+    background:#4a90e2;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+/* Reset button */
+button[type="reset"]{
+    background:#ccc;
+    border:none;
+    padding:10px 18px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+/* Hover effects */
+input[type="submit"]:hover{
+    background:#357abd;
+}
+
+button[type="reset"]:hover{
+    background:#999;
+}

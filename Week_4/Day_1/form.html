@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Contact Us</h1>
+    <br>
+    <p>Please fill out the form below to contact us we will get back to you as soon as possible :</p>
+
+    <form>
+        <div class="form-group">
+        <!-- Name Field -->
+         <label for="name">Full Name :</label>
+         <input type="text" id="name" name="name" placeholder="Enter Your Full name" required>
+            <br><br>
+
+        <!-- Email Field -->
+         <label for="email"> Your Email : </label>
+         <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+            <br><br>
+        
+        <!-- phone Field -->
+         <label for="phone"> Your Phone Number : </label>
+         <input type="number" id="phone" name="phone" placeholder="Enter Your Phone Number" required>
+            <br><br>
+        
+        <!-- Gender Field -->
+         <label for="gender"> Your Gender : </label>
+         <select id="gender" name="gender" required>
+            <option value="">Select Your Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+         </select>
+            <br><br>
+
+        <!-- Country Field -->
+         <label for="country"> Your Country : </label>
+         <select id="country" name="country" required>
+            <option value="">Select Your Country</option>
+            <option value="india">India</option>
+            <option value="egypt">Egypt</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+         </select>
+
+         <br><br>
+
+        <!-- Message Field -->
+         <label for="message"> Your Message : </label>
+         <textarea id="message" name="message" rows="5" cols="30" placeholder="Write Your Message" required></textarea>
+            <br><br>  
+
+        <div class="button-group">
+
+    <div class="checkbox-row">
+        <input type="checkbox" id="term" name="term" required>
+        <label for="term">I agree to the Terms and Conditions</label>
+    </div>
+
+    <div class="buttons">
+        <input type="submit" value="Submit">
+        <button type="reset">Reset</button>
+    </div>
+
+</div>
+    
+    </form> 
+    </div>
+</body>
+</html>
