@@ -1,0 +1,8 @@
+export const moviesData = [
+  { id: 1, title: "Inception", year: 2010 },
+  { id: 2, title: "Interstellar", year: 2014 },
+  { id: 3, title: "The Dark Knight", year: 2008 },
+  { id: 4, title: "Avengers: Endgame", year: 2019 },
+  { id: 5, title: "Titanic", year: 1997 },
+  // Add more for testing performance
+];

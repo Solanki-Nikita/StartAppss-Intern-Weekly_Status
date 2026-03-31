@@ -1,0 +1,40 @@
+/* Layout */
+.container {
+  max-width: 600px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Search box */
+.search {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Scrollable list */
+.list {
+  height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+}
+
+/* Movie item */
+.movie-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.movie-item:hover {
+  background: #f5f5f5;
+}
+
+/* Details */
+.details {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}

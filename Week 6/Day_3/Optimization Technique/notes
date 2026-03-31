@@ -1,0 +1,45 @@
+1. Eliminate unnecessary re-renders
+    = Use React.memo for list items
+    = Without this, every render recreates functions → all items re-render.
+
+2. Optimize expensive computation
+    = Memoize filtered list
+    = Filtering on every render = O(n) cost repeatedly.
+
+3. Virtualize large lists (critical for >100 items)
+    = react-window
+    = react-virtualized
+    = Only visible items render → massive performance gain.
+    
+    syntax = import { FixedSizeList as List } from "react-window";) 
+
+4. Debounce search input
+    = Use lodash.debounce
+    = Prevents filtering on every keystroke → reduces unnecessary computations.
+
+5. Lazy load components
+    = React.lazy + Suspense
+    = Reduces initial bundle size.
+
+6. Avoid unnecessary state
+    = Keep state minimal
+    = Derived state → compute, don’t store.
+
+7. Optimize API calls
+    = Cache results (e.g., with React Query)
+    = Avoid duplicate fetches
+    = Use pagination / infinite scroll
+
+8. Key correctness
+
+9. Image optimization
+    = Use smaller thumbnails
+    = Lazy load
+
+
+10. Priority order (do this first)
+    = Virtualization
+    = Memoization (memo, useMemo, useCallback)
+    = Debouncing
+    = API optimization
+    = Lazy loading
